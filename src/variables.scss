@@ -1,0 +1,34 @@
+$break-xxs: 320px; //20rem
+$break-xs: 416px; //26rem
+$break-s: 512px; //32rem
+$break-ms: 768px; //48rem
+$break-m: 869px; //56rem
+$break-ml: 1024px; //64rem
+$break-l: 1152px; //72rem
+$break-lg: 1366px; //85.4rem
+$break-xl: 1280px; //80rem
+$break-xxl: 1440px; //90rem
+
+:root {
+  --blue: #0058A0;
+  --lightblue: #00A5D8;
+  --white: #ffffff;
+  --grey: #E9E9E9;
+  --black: #000000;
+  --offwhite: #f1f1f1;
+  --darkgrey: #7C7C7C;
+  --lightgrey: #DADADA;
+  --midgrey: #939393;
+  --lightgreen: #00AEB0;
+}
+  
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,305 @@
+@import './variables.scss';
+
+.dashboardContainer p {
+  margin: 0;
+}
+.downArrrow {
+  float: right;
+  top: 5px;
+  position: relative;
+}
+.dropdown {
+  display: block;
+}
+.dropbtn svg {
+  margin-right: 8px;
+}
+.dropbtn {
+  background-color: var(--blue);
+  color: var(--white);
+  width: 100%;
+  font-weight: bold;
+  height: 33px;
+  text-align: left;
+  padding: 8px 0px 8px 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  margin-bottom: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: var(--white);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.searchDropDown.dropdown {
+  @media only screen and (min-width: $break-ml) {
+    margin-bottom: unset;
+  }
+}
+.searchDropDown .dropbtn {
+  @media only screen and (min-width: $break-ml) {
+    all: unset;
+  }
+}
+.searchDropDown .dropdown {
+  all: unset
+}
+.searchDropDown .dropdown-content {
+  @media only screen and (min-width: $break-ml) {
+    min-width: unset;
+    width: 32%;
+    position: absolute;
+    margin-top: 50px;
+  }
+}
+
+.dropdown-content a {
+  color: var(--black);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: var(--offwhite)}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dashboard {
+  font-family: proxima_nova_rgregular;
+  font-style: normal;
+  font-weight: normal;
+}
+.dropdown:hover .dropbtn {
+  background-color: var(--blue);
+  ;
+}
+.dashboardContainer {
+  @media only screen and (max-width: $break-m) {
+    padding: 24px 16px;
+    left: unset;
+    width: auto;
+  }
+  position: relative;
+  left: 15%;
+  width: min-content;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.mainHeading {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  margin-bottom: 12px;
+  color: #000000;
+}
+.subHeading {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 124.4%;
+}
+.committee {
+  border: 2px solid var(--lightblue);
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  width: 211px;
+  margin-right: 6px;
+  height: 32px;
+  line-height: 124.4%;
+  color: var(--lightblue);
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+.subNav p {
+  @media only screen and (max-width: $break-m) {
+    margin-top: 8px;
+  }
+  margin-top: 6px;
+}
+.details {
+  border: 2px solid var(--lightgrey);
+  font-size: 14px;
+  line-height: 124.4%;
+  width: 211px;
+  height: 32px;
+  text-align: center;
+  color: var(--darkgrey);
+  margin-right: 6px;
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+}
+.summary {
+  border: 2px solid var(--lightgrey);
+  text-align: center;
+  font-size: 14px;
+  width: 211px;
+  height: 32px;
+  line-height: 124.4%;
+  color: var(--darkgrey);
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+}
+.subNav {
+  display: flex;
+  margin-bottom: 24px;
+}
+.searchContainer {
+  display: flex;
+  height: 50px;
+}
+.searchDropDown {
+  @media only screen and (max-width: $break-m) {
+    font-size: 14px;
+    width: 36%;
+  }
+  background: var(--lightblue);
+  display: flex;
+  width: 33%;
+}
+.searchDropDown p {
+  @media only screen and (max-width: $break-m) {
+    margin: 16px 10px 0 3px;
+  }
+  text-align: center;
+  margin: 16px auto auto 12px;
+}
+.searchDropDown svg {
+  @media only screen and (max-width: $break-m) {
+    margin-right: unset;
+  }
+  margin-top: 6px;
+  margin-right: 12px;
+}
+.searchFieldContainer {
+  display: flex;
+  width: 70%;
+  justify-content: right;
+}
+.searchFieldContainer input {
+  width: 100%;
+  padding-left: 12px;
+  border: 1px solid var(--lightgrey);
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--midgrey);
+}
+.searchFieldContainer svg{
+  @media only screen and (max-width: $break-m) {
+    left: 84%;
+    margin-left: unset;
+  }
+  margin-top: 14px;
+  position: absolute;
+  margin-right: 12px;
+}
+.modal {
+  @media only screen and (max-width: $break-m) {
+    text-align: left;
+  }
+  font-size: 16px;
+  line-height: 124.4%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: right;
+  text-decoration-line: underline;
+}
+.demo {
+  display: flex;
+}
+.hide a {
+  color: var(--blue);
+}
+.modal a {
+  color: var(--blue);
+  font-size: 16px;
+}
+.selectedCommitte hr {
+  border: 1px solid var(--lightgrey);
+}
+.selectedCommitte {
+  border: 1px solid var(--lightgrey);
+  box-sizing: border-box;
+  padding: 18px 16px 20px 16px;
+  margin-bottom: 20px;
+}
+.committeBlock {
+  margin-bottom: 18px;
+  margin-right: auto;
+}
+.deleteSvgCont {
+  @media only screen and (max-width: $break-m) {
+    margin-top: 30px;
+  }
+}
+.block-child {
+  @media only screen and (max-width: $break-m) {
+    margin-top: 12px;
+  }
+  margin-top: 18px;
+}
+.selectedCommitte svg {
+  margin-left: 18px;
+}
+.experienceBlock {
+  margin-bottom: 16px;
+  display: flex;
+  padding: 20px 24px;
+  border: 1px solid var(--lightgreen);
+  box-sizing: border-box;
+}
+.experienceHeadline {
+  margin-bottom: 12px;
+  color: var(--black);
+}
+.experienceSubheading {
+  font-size: 16px;
+  line-height: 124.4%;
+  color: var(--darkgrey);
+}
+.selectedCommittteeBlock {
+  display: flex;
+}
+.selectedCommittteeBlock svg {
+  @media only screen and (max-width: $break-m) {
+    top: unset;
+  }
+  position: relative;
+  top: 16px;
+  border: 16px;
+}
+.footer {
+  box-shadow: -2px -3px 4px rgba(0, 0, 0, 0.16);
+  height: 75px;
+  width: 100%;
+  left: 20%;
+}
+.nextBarBlock button {
+  @media only screen and (max-width: $break-m) {
+    width: 122px;
+    float: right;
+    margin-right: 21px;
+    margin-top: 15px;
+  }
+  height: 44px;
+  font-size: 17px;
+  line-height: 21px;
+  width: 140px;
+  float: right;
+  margin-right: 174px;
+  margin-top: 15px;
+  text-align: center;
+  background: var(--lightblue);
+  border: none;
+  color: var(--white);
+}

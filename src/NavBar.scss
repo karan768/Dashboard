@@ -1,0 +1,44 @@
+@import './variables.scss';
+
+.selected {
+  font-weight: bold;
+  color: var(--white);
+}
+.NavBar {
+  @media only screen and (max-width: $break-m) {
+    display: none;
+  }
+  font-family: proxima_nova_rgregular;
+  font-style: normal;
+  font-weight: normal;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background: var(--blue);
+}
+.NavBarHeading {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.NavBarSubHeadings svg {
+  margin-right: 8px;
+}
+.NavBarSubHeadings li {
+  height: 56px;
+  text-align: initial;
+}
+.NavBarSubHeadings {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--white);
+  opacity: 0.5;
+}
+.NavBarSubHeadings ul {
+  list-style-type: none;
+}
