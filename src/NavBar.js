@@ -2,11 +2,11 @@ import './NavBar.scss';
 
 function NavBar() {
   return (
-    <div className="NavBar">
-        <div className="NavBarHeading">
+    <div className="navBar">
+        <div className="navBarHeading">
             <h4>Request Membership</h4>
         </div>
-        <div className="NavBarSubHeadings">
+        <div className="navBarSubHeadings">
             <ul>
                 <li>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -27,10 +27,6 @@
   cursor: pointer;
 }
 
-.dropdown {
-  margin-bottom: 20px;
-}
-
 .dropdown-content {
   display: none;
   background-color: var(--white);
@@ -47,17 +43,20 @@
   @media only screen and (min-width: $break-ml) {
     all: unset;
   }
+  @media only screen and (max-width: $break-m) {
+    all: unset;
+    position: relative;
+    right: 12px;
+  }
 }
 .searchDropDown .dropdown {
   all: unset
 }
 .searchDropDown .dropdown-content {
-  @media only screen and (min-width: $break-ml) {
-    min-width: unset;
-    width: 32%;
-    position: absolute;
-    margin-top: 50px;
-  }
+  min-width: unset;
+  width: 32%;
+  position: absolute;
+  margin-top: 50px;
 }
 
 .dropdown-content a {
@@ -80,6 +79,14 @@
 .dropdown:hover .dropbtn {
   background-color: var(--blue);
   ;
+}
+.searchDropDown.dropdown:hover .dropbtn {
+  @media only screen and (min-width: $break-ml) {
+    all: unset;
+  }
+  @media only screen and (max-width: $break-m) {
+    background-color: unset;
+  }
 }
 .dashboardContainer {
   @media only screen and (max-width: $break-m) {
@@ -107,17 +114,19 @@
   line-height: 124.4%;
 }
 .committee {
-  border: 2px solid var(--lightblue);
+  border: 2px solid var(--lightgrey);
   text-align: center;
-  font-weight: bold;
   font-size: 14px;
   width: 211px;
   margin-right: 6px;
   height: 32px;
   line-height: 124.4%;
-  color: var(--lightblue);
+  color: var(--darkgrey);
   border-top-right-radius: 28px;
   border-bottom-right-radius: 28px;
+}
+.maindropdown {
+  margin-bottom: 20px;
 }
 .subNav p {
   @media only screen and (max-width: $break-m) {
@@ -168,9 +177,6 @@
   width: 33%;
 }
 .searchDropDown p {
-  @media only screen and (max-width: $break-m) {
-    margin: 16px 10px 0 3px;
-  }
   text-align: center;
   margin: 16px auto auto 12px;
 }
@@ -214,15 +220,35 @@
   text-align: right;
   text-decoration-line: underline;
 }
+.hide {
+  display: none;
+}
+.showButton {
+  display: none;
+}
+.showCta {
+  display: block;
+}
 .demo {
   display: flex;
 }
-.hide a {
+.hideCta button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
   color: var(--blue);
 }
 .modal a {
   color: var(--blue);
   font-size: 16px;
+}
+.selectedNav {
+  font-weight: bold;
+  border: 2px solid var(--lightblue);
+  color: var(--lightblue);
 }
 .selectedCommitte hr {
   border: 1px solid var(--lightgrey);

@@ -1,7 +1,5 @@
 @import './variables.scss';
 
-//I have learned what mixin is and what include does and to be honest this is the first time I am using this and it is pretty cool, thanks to you! :)
-
 @mixin font-style-list {
   font-family: proxima_nova_rgregular;
   font-style: normal;
@@ -18,65 +16,65 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .imagePlaceHolder {
-    @media only screen and (max-width: $break-s) {
-        width: 43px;
-        height: 43px;
-        margin: 18px 0 18px 16px
-    }
-    background: var(--grey);
-    border-radius: 58px;
-    width: 63px;
-    height: 63px;
-    margin: 12px 0 12px 32px;
-    position: absolute;
+  @media only screen and (max-width: $break-s) {
+    width: 43px;
+    height: 43px;
+    margin: 18px 0 18px 16px
+  }
+  background: var(--grey);
+  border-radius: 58px;
+  width: 63px;
+  height: 63px;
+  margin: 12px 0 12px 32px;
+  position: absolute;
 }
 #nameInitial {
-    @media only screen and (max-width: $break-s) {
-        font-size: 12px;
-    }
-    text-align: center;
-    margin-top: 7px;
+  @media only screen and (max-width: $break-s) {
+    font-size: 12px;
+  }
+  text-align: center;
+  margin-top: 7px;
 }
 .userName {
-    @media only screen and (max-width: $break-s) {
-        margin-top: 5px;
-        font-size: 14px;
-        margin-right: 6px;
-        line-height: 17px;
-    }
-    margin-top: 7px;
-    font-size: 17px;
-    margin-right: 14px;
-    float: right;
-    line-height: 21px;
-    color: var(--black);
+  @media only screen and (max-width: $break-s) {
+    margin-top: 5px;
+    font-size: 14px;
+    margin-right: 6px;
+    line-height: 17px;
+  }
+  margin-top: 7px;
+  font-size: 17px;
+  margin-right: 14px;
+  float: right;
+  line-height: 21px;
+  color: var(--black);
 }
 .userInitialsPlacehodler {
-    @media only screen and (max-width: $break-s) {
-        width: 28px;
-        height: 28px;
-        margin-right: 6px;
-    }
-    background: var(--grey);
-    border-radius: 18px;
-    width: 36px;
-    height: 36px;
-    margin-right: 8px;
-    float: right;
+  @media only screen and (max-width: $break-s) {
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+  }
+  background: var(--grey);
+  border-radius: 18px;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  float: right;
 }
 .profileDetail {
-    @media only screen and (max-width: $break-s) {
-        right: 16px;
-    }
-    display: flex;
-    float: right;
-    top: 27px;
-    position: absolute;
-    right: 36px;
+  @media only screen and (max-width: $break-s) {
+    right: 16px;
+  }
+  display: flex;
+  float: right;
+  top: 27px;
+  position: absolute;
+  right: 36px;
 }
 .userLogo {
-    @media only screen and (max-width: $break-s) {
-        margin-top: 3px;
-    }
-    margin-top: 8px;
+  @media only screen and (max-width: $break-s) {
+    margin-top: 3px;
+  }
+  margin-top: 8px;
 }
